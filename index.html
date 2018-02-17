@@ -7,116 +7,148 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <style type="text/css">
-    /*********************************/
-    /* BODY                          */
-    /*********************************/
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
-    .body-fixed-image {
-        background: no-repeat center center fixed; 
-        background-image: url(/img/web-design.jpg);
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
-    .body-full-screen {
-        min-height: 100%;
-    }
-
-    .container {
-      background-color: rgba(255, 255, 255, .8);
-      border-radius: 5px;
-    }
-
-    footer {
-      background-color: #343a40;
-    }
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body class="body-fixed-image body-full-screen">
 
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-    <a class="navbar-brand" href="#">🏠</a>
-  </nav>
+  <div id="gdg-hack-2018-panel">
 
-  <main class="container pt-4 pb-4">
-    <div class="row justify-content-md-center mb-4">
-      <div class="col-12 col-md-8">
-        <p class="pl-4">
-         Полезные ссылки:
-        </p>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <a href="https://github.com/VadimCpp">GitHub</a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://stackoverflow.com/users/1775459/vadim">StackOverflow</a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://twitter.com/VadimCpp">Twitter</a>
-          </li>
-        </ul>
+    <video autoplay muted loop id="back-video">
+      <source src="video/back.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1> GDG Censor Bot </h1>
+          <hr class="separator">
+          <h3> П***********м [РОСКОМНАДЗОР] </h3>
+          <div class="mt-5 col-8 col-md-6 mx-auto">
+            <button class="btn btn-lg btn-primary w-100"> <i class="fab fa-github mr-2"></i> Программируем </button>
+          </div>
+          <div class="mt-4 col-8 col-md-6 mx-auto">
+            <button class="btn btn-lg btn-success w-100"> <i class="fab fa-telegram-plane mr-2"></i> Тестируем </button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row justify-content-md-center mb-4">
-      <div class="col-12 col-md-8">  
-        <p class="pl-4">
-          Разные умные слова:
-        </p>
-        <ul class="list-group">
-          <li class="list-group-item">
-            HTML, CSS, sass, less, Javascript, es6, jQuery, Vue.js
-          </li>
-          <li class="list-group-item">
-            Bootstrap, Fontello, Leaflet
-          </li>
-          <li class="list-group-item">
-            npm, yarn, gulp, webpack
-          </li>
-          <li class="list-group-item">
-            bash, npm, yarn, git, Markdown
-          </li>
-          <li class="list-group-item">
-            MVC, MVVM
-          </li>
-          <li class="list-group-item">
-            Cloudflare, DigitalOcean
-          </li>
-        </ul>
-      </div>      
-    </div>
-    <div class="row justify-content-md-center mb-5">
-      <div class="col-12 col-md-8">  
-        <p class="pl-4">
-          Сайты:
-        </p>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <a href="https://gsgusev.ru/">https://gsgusev.ru/</a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://events4friends.ru/">https://events4friends.ru/</a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://webdev2018.blogspot.ru/">https://webdev2018.blogspot.ru/</a>
-          </li>
-        </ul>
-      </div>  
-    </div>  
-  </main>
 
-  <footer class="container-fluid pb-5 pt-5 mt-5">
-    <p class="text-right mb-0 mr-4">
-      <a href="#">Наверх</a>
-    </p>
-  </footer>
+    <div class="container container-bottom">
+      <button id="btn-website" class="btn btn-outline-info btn-bottom-left">На сайт 
+        <b>vadimcpp.ru</b>
+      </button>
+
+      <button id="btn-mute" class="btn btn-outline-info float-right"> <i class="fas fa-volume-off"></i> </button>
+    </div>
+
+  </div>
+
+
+  <div id="website" class="d-none">
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <a class="navbar-brand" href="#">🏠</a>
+    </nav>
+
+    <main class="container container-color pt-4 pb-4">
+      <div class="row justify-content-md-center mb-4">
+        <div class="col-12 col-md-8">
+          <p class="pl-4">
+           Полезные ссылки:
+          </p>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="https://github.com/VadimCpp">GitHub</a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://stackoverflow.com/users/1775459/vadim">StackOverflow</a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://twitter.com/VadimCpp">Twitter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-md-center mb-4">
+        <div class="col-12 col-md-8">  
+          <p class="pl-4">
+            Разные умные слова:
+          </p>
+          <ul class="list-group">
+            <li class="list-group-item">
+              HTML, CSS, sass, less, Javascript, es6, jQuery, Vue.js
+            </li>
+            <li class="list-group-item">
+              Bootstrap, Fontello, Leaflet
+            </li>
+            <li class="list-group-item">
+              npm, yarn, gulp, webpack
+            </li>
+            <li class="list-group-item">
+              bash, npm, yarn, git, Markdown
+            </li>
+            <li class="list-group-item">
+              MVC, MVVM
+            </li>
+            <li class="list-group-item">
+              Cloudflare, DigitalOcean
+            </li>
+          </ul>
+        </div>      
+      </div>
+      <div class="row justify-content-md-center mb-5">
+        <div class="col-12 col-md-8">  
+          <p class="pl-4">
+            Сайты:
+          </p>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="https://gsgusev.ru/">https://gsgusev.ru/</a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://events4friends.ru/">https://events4friends.ru/</a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://webdev2018.blogspot.ru/">https://webdev2018.blogspot.ru/</a>
+            </li>
+          </ul>
+        </div>  
+      </div>  
+    </main>
+
+    <footer class="container-fluid pb-5 pt-5 mt-5">
+      <p class="text-right mb-0 mr-4">
+        <a href="#">Наверх</a>
+      </p>
+    </footer>
+
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      // Mute / unmute video
+      $("#btn-mute").click(function() {
+        $("#btn-mute > i").toggleClass("fa-volume-off").toggleClass("fa-volume-up");
+        var muted = $("#back-video").prop('muted');
+        $("#back-video").prop('muted', !muted);
+      });
+
+      // Show website
+      $("#btn-website").click(function() {
+        $("#back-video").prop('muted', true);
+        $("#gdg-hack-2018-panel").toggleClass("d-none");
+        $("#website").toggleClass("d-none");
+      });
+
+
+    });
+  </script>
 </body>
 </html>
