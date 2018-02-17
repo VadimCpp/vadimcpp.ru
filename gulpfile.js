@@ -15,7 +15,7 @@ gulp.task('browserSync', function() {
 
 
 gulp.task('watch', function() {
-    gulp.watch('index.html', ['browserSync']);
+    gulp.watch('index.html', browserSync.reload);
 });
 
 
