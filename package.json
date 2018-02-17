@@ -1,0 +1,24 @@
+{
+  "name": "vadimcpp.ru",
+  "version": "1.0.0",
+  "description": "> Personal website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VadimCpp/vadimcpp.ru.git"
+  },
+  "author": "Vadim Cpp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VadimCpp/vadimcpp.ru/issues"
+  },
+  "homepage": "https://github.com/VadimCpp/vadimcpp.ru#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1"
+  }
+}
