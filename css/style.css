@@ -3,29 +3,10 @@
 /* GDG 2018 HACK                 */
 /*********************************/
 
-#gdg-hack-2018-panel {
-  background-color: #343a40;
-  color: white;
-  height: 100%;
-  left: 0;
-  margin: 0;
-  overflow: scroll;
-  padding: 0;
-  position: fixed;
-  text-align: center;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-
 .standard-page {
-  background-color: #343a40;
+  color: white;
   min-height: 100%;
   padding: 40px 0;
-}
-
-.page-separator {
-  height: 350px;
 }
 
 .final-page {
@@ -51,13 +32,6 @@
   color: white;  
   border-color: white;
   border-bottom: 2px solid;
-}
-
-.container-bottom {
-  bottom: 10px;
-  position: absolute;
-  text-align: left;
-  width: 100%;
 }
 
 #btn-mute {
@@ -94,7 +68,7 @@
 /* BODY                          */
 /*********************************/
 
-.body-fixed-image {
+.fixed-image {
     background: no-repeat center center fixed; 
     background-image: url(/img/web-design.jpg);
     -webkit-background-size: cover;
@@ -114,4 +88,9 @@
 
 footer {
   background-color: #343a40;
+}
+
+.section-separator {
+  background-color: #343a40;
+  height: 50px;
 }
