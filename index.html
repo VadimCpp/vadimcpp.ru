@@ -51,18 +51,56 @@
       <source src="video/back.mp4" type="video/mp4">
     </video>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="mt-5 col-10 col-md-6 mx-auto">
-            <a href="https://github.com/VadimCpp/gdg-censor-bot" class="btn btn-lg btn-primary w-100"> <i class="fab fa-github mr-2"></i> Посмотреть код </a>
+    <!-- посмотреть код и оюматерить всех -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="mt-5 col-10 col-md-6 mx-auto">
+              <a href="https://github.com/VadimCpp/gdg-censor-bot" class="btn btn-lg btn-primary w-100"> <i class="fab fa-github mr-2"></i> Посмотреть код* </a>
+            </div>
+            <div class="col-10 col-md-6 mx-auto">
+              <small>
+                * - только первоначальная версия с хакатона
+              </small>
+            </div>        
+            <div class="mt-4 col-10 col-md-6 mx-auto">
+              <a href="https://t.me/GDGCensorChat" class="btn btn-lg btn-success w-100"> <i class="fab fa-telegram-plane mr-2"></i> Обматерить всех </a>
+            </div>        
           </div>
-          <div class="mt-4 col-10 col-md-6 mx-auto">
-            <a href="https://t.me/GDGCensorChat" class="btn btn-lg btn-success w-100"> <i class="fab fa-telegram-plane mr-2"></i> Обматерить всех </a>
+        </div>
+      </div>
+
+    <!-- быстрый тест -->
+      <div class="container">
+        <div class="row">  
+          <div class="col-12">
+            <div class="mt-5 col-10 col-md-6 mx-auto text-center">      
+              <h2> Быстрый тест </h2>
+            </div>          
+            <div class="col-10 col-md-6 mx-auto">      
+              <small>
+                Напиши что-нибудь нецензурное и нажми кнопку тест. 
+              </small>
+            </div>   
+            <div class="mt-4 col-10 col-md-6 mx-auto">
+              <a id="btn-test" href="javascript:;" class="btn btn-lg btn-secondary w-100"> Тест </a>
+            </div>    
+            <div class="mt-4 col-10 col-md-6 mx-auto">
+              <textarea id="test-area" class="w-100" placeholder="Нецензурщина, минимум 10 символов!">хуй пизда джигурда
+</textarea>
+            </div>    
+            <div class="mt-4 col-10 col-md-6 mx-auto">      
+              <small>
+                Ниже в окне появится результат:
+              </small>
+            </div>            
+            <div class="col-10 col-md-6 mx-auto">
+              <textarea id="result-area" class="w-100 text-secondary" disabled>Тут будет результат</textarea>
+            </div>   
           </div>        
         </div>
       </div>
-    </div>
+
     <div class="container mb-5 mt-4">
       <button id="btn-mute" class="btn btn-outline-info float-right"> <i class="fas fa-volume-off"></i> </button>
     </div>
@@ -162,6 +200,40 @@
         var muted = $("#back-video").prop('muted');
         $("#back-video").prop('muted', !muted);
       });
+
+      $("#btn-test").click(function() {
+        var text = $("#test-area")[0].value;
+
+        if (text && text.length >= 10) {        
+          //
+          // NOTE!
+          // Этот пример работает только на моем сайте vadimcpp.ru
+          // Для использования API на своем сайте, обратитесь к httms://t.me/vadimcpp за получением ключа.
+          //
+          $.ajax({
+              url: 'http://gdg-censor-bot.herokuapp.com/parse',
+              type: 'POST',
+              data: {
+                  key: "A7A034AF8C960D1CD322622BDC9C45B23FA7CEFB01B451386BBCFDB4E3A1A5AE",
+                  text: text
+              },
+              dataType: "json",
+              success: function(data) {
+                if (data.censored) {
+                  $("#result-area")[0].value = data.result;
+                } else if (data.error) {
+                  alert(data.error); 
+                } else {
+                  alert('Ваш текст не содержит нецензурных выражений!');
+                }
+              }
+          });
+        } else {
+          alert('Напиши что-нибудь нецензурное не менее 10 символов');
+          $("#test-area")[0].focus();
+        }
+      });
+
 
     });
   </script>
