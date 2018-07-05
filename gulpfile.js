@@ -20,4 +20,6 @@ gulp.task('watch', function() {
 });
 
 
-gulp.task('default', ['browserSync', 'watch']);
+gulp.task('default', gulp.series('browserSync', 'watch', function() { 
+    // default task code here
+}));
