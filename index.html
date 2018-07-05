@@ -85,7 +85,7 @@
               </small>
             </div>   
             <div class="mt-4 col-10 col-md-6 mx-auto">
-              <a id="btn-test" href="javascript:;" class="btn btn-lg btn-secondary w-100"> Тест </a>
+              <a id="btn-test" href="javascript:;" class="btn btn-lg btn-secondary w-100"> <i class="fas fa-spinner mr-1" id="js-test-ico" style="display: none;"></i> Тест </a>
             </div>    
             <div class="mt-4 col-10 col-md-6 mx-auto">
               <textarea id="test-area" class="w-100" placeholder="Нецензурщина, минимум 10 символов!">хуй пизда джигурда
@@ -204,9 +204,15 @@
       });
 
       $("#btn-test").click(function() {
-        var text = $("#test-area")[0].value;
+        if( $(this).hasClass('disabled') )
+          return;
 
-        if (text && text.length >= 10) {        
+        var text = $("#test-area")[0].value;
+        var test_button = this;
+
+        if (text && text.length >= 10) {
+          $("#js-test-ico").show();
+          $(test_button).addClass('disabled');
           //
           // NOTE!
           // Этот пример работает только на моем сайте vadimcpp.ru
@@ -228,6 +234,8 @@
                 } else {
                   alert('Ваш текст не содержит нецензурных выражений!');
                 }
+                $("#js-test-ico").hide();
+                $(test_button).removeClass('disabled');
               }
           });
         } else {
