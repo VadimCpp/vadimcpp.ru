@@ -109,6 +109,15 @@ footer {
   transform: translateX(-50%) translateY(-50%);
 }
 
+
+/*********************************/
+/* DEVFEST                       */
+/*********************************/
+
+.avatar-img {
+  border-radius: 50%;
+}
+
 /*@media (min-width: 62em {
    #back-video {
       display:block;
