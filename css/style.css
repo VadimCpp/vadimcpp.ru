@@ -68,6 +68,15 @@
 /* BODY                          */
 /*********************************/
 
+.fixed-image-2 {
+    background: no-repeat center center fixed; 
+    background-image: url(/img/devfest-back.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .fixed-image {
     background: no-repeat center center fixed; 
     background-image: url(/img/web-design.jpg);
@@ -92,7 +101,13 @@ footer {
 
 .section-separator {
   background-color: #343a40;
+  color: #fff;
   height: 50px;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
 }
 
 #back-video {
@@ -120,6 +135,7 @@ footer {
 
 .ad {
   background-color: #ffffe5;
+  background-color: rgba(255, 255, 229, .9);
   border-radius: 5px;
   color: black;
 }
