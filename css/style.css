@@ -145,3 +145,12 @@ footer {
       display:block;
    } 
 }*/
+
+
+/*********************************/
+/* OTHER                         */
+/*********************************/
+
+.word-break {
+  word-break: break-word;
+}
