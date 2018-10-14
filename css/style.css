@@ -146,6 +146,56 @@ footer {
    } 
 }*/
 
+/*********************************/
+/* BUTTONS                       */
+/*********************************/
+
+.btn-blogger {
+  background-color: rgba(247, 94, 33);
+  border-color: rgba(247, 94, 33);
+}
+
+/* TODO: copy the whole button design and remove !important some day */
+.btn-blogger:hover {
+  background-color: rgba(247, 94, 33) !important;
+  border-color: rgba(247, 94, 33) !important;
+  filter: brightness(85%) !important;
+}
+
+/* TODO: copy the whole button design and remove !important some day */
+.btn-blogger:active {
+  background-color: rgba(247, 94, 33) !important;
+  border-color: rgba(247, 94, 33) !important;
+  filter: brightness(70%) !important;
+}
+
+.btn-telegram {
+  background-color: rgba(23, 161, 215);
+  border-color: rgba(23, 161, 215);
+}
+
+/* TODO: copy the whole button design and remove !important some day */
+.btn-telegram:hover {
+  background-color: rgba(23, 161, 215) !important;
+  border-color: rgba(23, 161, 215) !important;
+  filter: brightness(85%) !important;
+}
+
+/* TODO: copy the whole button design and remove !important some day */
+.btn-telegram:active {
+  background-color: rgba(23, 161, 215) !important;
+  border-color: rgba(23, 161, 215) !important;
+  filter: brightness(70%) !important;
+}
+
+/*********************************/
+/* BACKGROUNDS                   */
+/*********************************/
+
+/* http://www.myhtmltutorials.com/softcolor.html */
+.bg-myfirstbotbot {
+  background-color: #EEFFFF;
+}
 
 /*********************************/
 /* OTHER                         */
