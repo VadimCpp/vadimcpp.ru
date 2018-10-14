@@ -569,7 +569,7 @@
 
   <footer class="container-fluid pb-5 pt-5">
     <p class="text-right mb-0 mr-4">
-      <a href="#">Наверх</a>
+      <a id="scroll-top-btn" href="#">Наверх</a>
     </p>
   </footer>
 
@@ -584,6 +584,21 @@
   <script type="text/javascript">
     $(document).ready(function() {
 
+      // Smooth scroll
+      $('.nav-link, .navbar-brand').click(function() {
+        var sectionTo = $(this).attr('href');
+        $('html, body').animate({
+          scrollTop: $(sectionTo).offset().top
+        }, 1500);
+      });
+
+      // Smooth scroll
+      $('#scroll-top-btn').click(function() {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 1500);
+      });
+
       // Mute / unmute video
       $("#btn-mute").click(function() {
         $("#btn-mute > i").toggleClass("fa-volume-off").toggleClass("fa-volume-up");
@@ -591,6 +606,7 @@
         $("#back-video").prop('muted', !muted);
       });
 
+      // GDG Censor Bot - test button
       $("#btn-test").click(function() {
         if( $(this).hasClass('disabled') )
           return;
