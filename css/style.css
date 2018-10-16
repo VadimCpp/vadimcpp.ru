@@ -218,10 +218,23 @@ footer {
   background-color: #EEFFFF;
 }
 
+.bg-annadeya-cards {
+    background: no-repeat center center fixed; 
+    background-image: url(/img/annadeya-cards-back.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 /*********************************/
 /* OTHER                         */
 /*********************************/
 
 .word-break {
   word-break: break-word;
+}
+
+.text-shadow-white {
+  text-shadow: 1px 1px 5px white;
 }
