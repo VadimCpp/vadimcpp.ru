@@ -34,8 +34,18 @@
           <li class="nav-item">
             <a class="nav-link" href="#bots">Боты</a>
           </li>
-          <li class="nav-item">
+<!--           <li class="nav-item">
             <a class="nav-link" href="#sites">Сайты</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Сайты
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#sites">Сайты</a>
+              <a class="dropdown-item" href="#annadeya-cards">Annadeya cards</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#events">События</a>
@@ -267,7 +277,7 @@
     </div>
   </section>  
 
-  <section class="section-separator bg-secondary">
+  <section class="section-separator bg-secondary" id="annadeya-cards">
     cards.annadeya.ru
   </section>
   
@@ -293,6 +303,14 @@
           <i class="fab fa-github"></i> Annadeya Cards
         </a>
       </p>  
+      <p class="text-shadow-white">
+        Задайте вопросы автору этих карт ВКонтакте
+      </p>
+      <p class="text-center">
+        <a class="btn btn-primary btn-vk" href="https://vk.com/annadeya">
+          <i class="fab fa-vk"></i> Анна Деянова
+        </a>
+      </p>
     </div>  
   </section>  
 
@@ -608,11 +626,14 @@
     $(document).ready(function() {
 
       // Smooth scroll
-      $('.nav-link, .navbar-brand').click(function() {
+      $('.nav-link, .navbar-brand, .dropdown-item').click(function() {
         var sectionTo = $(this).attr('href');
-        $('html, body').animate({
-          scrollTop: $(sectionTo).offset().top
-        }, 1500);
+
+        if (sectionTo != '#') {
+          $('html, body').animate({
+            scrollTop: $(sectionTo).offset().top
+          }, 1500);
+        }
       });
 
       // Smooth scroll
