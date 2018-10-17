@@ -4,8 +4,8 @@
   "description": "> Personal website",
   "main": "index.js",
   "scripts": {
-    "dev": "gulp",
-    "start": "gulp"
+    "dev": "gulp serve",
+    "start": "gulp serve"
   },
   "repository": {
     "type": "git",
