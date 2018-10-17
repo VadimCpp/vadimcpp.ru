@@ -227,6 +227,15 @@ footer {
     background-size: cover;    
 }
 
+.bg-landlord {
+    background: no-repeat center center fixed; 
+    background-image: url(/img/landlord-back.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+}
+
 /*********************************/
 /* OTHER                         */
 /*********************************/
@@ -238,4 +247,9 @@ footer {
 .text-shadow-white {
   text-shadow: 0px 0px 10px  white;
   color: black;
+}
+
+.text-shadow-black {
+  text-shadow: 0px 0px 10px  black;
+  color: white;
 }
