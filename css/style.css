@@ -235,6 +235,14 @@ footer {
   transform: translateX(-50%) translateY(-50%);
 }
 
+.bg-new-year {
+  background: no-repeat center center fixed; 
+  background-image: url(/img/aurora-borealis.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
 
 /*********************************/
 /* OTHER                         */
