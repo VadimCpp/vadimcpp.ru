@@ -86,9 +86,11 @@
     background-size: cover;
 }
 
-.body-full-screen {
-    min-height: 100%;
+.body-theme {
+  min-height: 100%;
+  background-color: black;
 }
+
 
 .container-color {
   background-color: rgba(255, 255, 255, .8);
@@ -96,11 +98,13 @@
 }
 
 footer {
-  background-color: #343a40;
+  background-color: trasnparent;
+  /*background-color: #343a40;*/
 }
 
 .section-separator {
-  background-color: #343a40;
+  background-color: trasnparent;
+  /*background-color: #343a40;*/
   color: #fff;
   height: 50px;
   padding-top: 10px;
