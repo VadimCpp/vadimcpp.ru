@@ -106,7 +106,7 @@ footer {
   background-color: trasnparent;
   /*background-color: #343a40;*/
   color: #fff;
-  height: 50px;
+  height: 70px;
   padding-top: 10px;
   padding-left: 20px;
   font-size: 2rem;
@@ -268,6 +268,11 @@ footer {
 .text-shadow-black {
   text-shadow: 0px 0px 10px  black;
   color: white;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 0 0 4px #212529;
 }
 
 /**********************************/
