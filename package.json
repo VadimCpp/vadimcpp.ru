@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/VadimCpp/vadimcpp.ru#readme",
   "devDependencies": {
-    "browser-sync": "^2.24.5",
+    "browser-sync": "^2.26.3",
     "gulp": "github:gulpjs/gulp#4.0"
   }
 }
