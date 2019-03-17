@@ -98,13 +98,11 @@
 }
 
 footer {
-  background-color: trasnparent;
-  /*background-color: #343a40;*/
+  background-color: #f5c4ca;
 }
 
 .section-separator {
-  background-color: trasnparent;
-  /*background-color: #343a40;*/
+  background-color: #f5c4ca;
   color: #fff;
   height: 70px;
   padding-top: 10px;
@@ -249,7 +247,7 @@ footer {
 
 .bg-new-year {
   background: no-repeat center center fixed; 
-  background-image: url(/img/aurora-borealis.jpg);
+  background-image: url(/img/kaliningrad-spring.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
