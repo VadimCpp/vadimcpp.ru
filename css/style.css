@@ -208,6 +208,29 @@ footer {
 /* BACKGROUNDS                   */
 /*********************************/
 
+/* Copyright to http://alexandreev.com/artworks/collection/free-downloads/the-big-travel/ */
+.bg-big-travel:before {
+  /* https://stackoverflow.com/a/33057806/1775459 */
+  background-color: black;
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(../img/the-big-travel.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
+
+.bg-transparent {
+  background-color: rgba(248, 249, 250, .85)!important;
+}
+
 /* http://www.myhtmltutorials.com/softcolor.html */
 .bg-myfirstbotbot {
   background-color: #EEFFFF;
