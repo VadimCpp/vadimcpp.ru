@@ -39,23 +39,62 @@
       <p class="text-center">        
         <a class="btn btn-outline-success" href="http://gsgusev.ru/">Перейти на сайт gsgusev.ru</a>
       </p>
-      <p>
+      <p class="pt-5">
         Вам понравился сайт?
-      </p>    
-      <h2 class="h2 pt-4 text-center">Контакты</h2>
-      <section class="pt-2">
-        <p>
-          <a href="https://www.linkedin.com/in/vadym-kaninskyi/">linkedin</a>, 
-          <a href="https://vk.com/vadimcpp">вк</a>,
-          <a href="https://www.facebook.com/vadimcpp">фб</a>, 
-          <a href="https://twitter.com/VadimCpp">твиттер</a>, 
-          <a href="https://www.instagram.com/vadimcpp/">инстаграм</a>,
-          <a href="https://t.me/vadimcpp">tg</a>, 
-          <a href="mailto:vadim.cpp@gmail.com">email</a>
-        </p>
-      </section>
+      </p>
+      <p class="text-center">
+        <button id="btn-yes" class="btn btn-success mr-2 pl-3 pr-3">Да</button>
+        <button id="btn-no" class="btn btn-danger ml-2 pl-3 pr-3">Нет</button>
+      </p>
+      <p id="block-yes" style="display:none;" class="pt-4">
+        Искренняя похвала - это всегда приятно. Свяжитесь со мной и я сделаю вам такой же лендинг всего за 10000₽,
+        а веб-приложение за 20000₽. Или все вместе за 25000₽
+      </p>
+      <p id="block-no" style="display:none;" class="pt-4">
+        Хорошо. Критика важна для меня не меньше, чем для одного известного московского дизайнера.
+        Пожалуйста, помогите сделать сайт лучше. Расскажите, что вам не понравилось?
+      </p>
+      <div id="block-contacts" style="display:none;">      
+        <h2 class="h2 pt-4 text-center">Контакты</h2>
+        <section class="pt-2">
+          <p>
+            <a href="https://www.linkedin.com/in/vadym-kaninskyi/">linkedin</a>, 
+            <a href="https://vk.com/vadimcpp">вк</a>,
+            <a href="https://www.facebook.com/vadimcpp">фб</a>, 
+            <a href="https://twitter.com/VadimCpp">твиттер</a>, 
+            <a href="https://www.instagram.com/vadimcpp/">инстаграм</a>,
+            <a href="https://t.me/vadimcpp">tg</a>, 
+            <a href="mailto:vadim.cpp@gmail.com">email</a>
+          </p>
+        </section>
+      </div>
     </div>
   </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $('#btn-yes').click(function() {
+      $('#block-no').hide();
+      $('#block-yes').show();
+      $('#block-contacts').show();
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#block-contacts").offset().top
+      }, 2000);
+    });
+
+    $('#btn-no').click(function() {
+      $('#block-yes').hide();
+      $('#block-no').show();
+      $('#block-contacts').show();
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#block-contacts").offset().top
+      }, 2000);
+    });
+  </script>
 
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
