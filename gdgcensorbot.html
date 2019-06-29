@@ -57,8 +57,9 @@
         <textarea id="test-area" rows="4" class="form-control w-100 text-danger" placeholder="Нецензурщина, минимум 10 символов!">Нихуя себе, блядь, как много, сука, ёбаного мата. Это же ебануться, как невъебенно, сукаблядь, много мата, которого, пиздец, как дохуя. Так дохуя, что я охуеваю просто, какой пидарас запостил столько мата, чтобы так можно было охуевать от его ёбаного количества. Пиздец.</textarea>
       </p>
       <p>
-        <a id="btn-test" href="javascript:;" class="btn btn-success px-5">
-          <img src="img/gdg-loading.gif" id="js-test-ico" style="display: none;"> <span id="js-test-text">Вырезать маты</span> 
+        <a id="btn-test" href="javascript:;" class="btn btn-outline-secondary px-5 w-100">
+          <img src="img/gdg-loading.gif" id="js-test-ico" style="display: none;">
+          <span id="js-test-text">Вырезать маты</span> 
         </a>
       </p>    
       <p>
@@ -75,7 +76,7 @@
       </p>
       <p id="block-yes" style="display:none;" class="pt-4">
         Искренняя похвала - это всегда приятно. Пользуйтесь ботом наздоровье без рекламы, регистрации и СМС: 
-        <a class="btn btn-link" href="https://t.me/gdgcensorbot">https://t.me/gdgcensorbot</a>        
+        <a href="https://t.me/gdgcensorbot">https://t.me/gdgcensorbot</a>
       </p>
       <p id="block-no" style="display:none;" class="pt-4">
         Хорошо. Критика важна для меня не меньше, чем для одного известного московского дизайнера.
@@ -121,6 +122,50 @@
             scrollTop: $("#block-contacts").offset().top
         }, 2000);
       });
+
+      // GDG Censor Bot - test button
+      $("#btn-test").click(function() {
+        if( $(this).hasClass('disabled') )
+          return;
+
+        var text = $("#test-area")[0].value;
+        var test_button = this;
+
+        if (text && text.length >= 10) {
+          $("#js-test-ico").show();
+          $("#js-test-text").hide();
+          $(test_button).addClass('disabled');
+          //
+          // NOTE!
+          // Этот пример работает только на моем сайте vadimcpp.ru
+          // Для использования API на своем сайте, обратитесь к httms://t.me/vadimcpp за получением ключа.
+          //
+          $.ajax({
+              url: 'http://gdg-censor-bot.herokuapp.com/parse',
+              type: 'POST',
+              data: {
+                  key: "A7A034AF8C960D1CD322622BDC9C45B23FA7CEFB01B451386BBCFDB4E3A1A5AE",
+                  text: text
+              },
+              dataType: "json",
+              success: function(data) {
+                if (data.censored) {
+                  $("#result-area")[0].value = data.result;
+                } else if (data.error) {
+                  alert(data.error); 
+                } else {
+                  alert('Ваш текст не содержит нецензурных выражений!');
+                }
+                $("#js-test-ico").hide();
+                $("#js-test-text").show();
+                $(test_button).removeClass('disabled');
+              }
+          });
+        } else {
+          alert('Напиши что-нибудь нецензурное не менее 10 символов');
+          $("#test-area")[0].focus();
+        }
+      });    
     });
   </script>
 
