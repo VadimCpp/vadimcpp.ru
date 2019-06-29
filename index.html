@@ -179,29 +179,8 @@
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
   <script type="text/javascript">
     $(document).ready(function() {
-
-      // Smooth scroll
-      $('.nav-link, .navbar-brand, .dropdown-item').click(function() {
-        var sectionTo = $(this).attr('href');
-
-        if (sectionTo != '#') {
-          $('html, body').animate({
-            scrollTop: $(sectionTo).offset().top
-          }, 1500);
-        }
-      });
-
-      // Smooth scroll
-      $('#scroll-top-btn').click(function() {
-        $('html, body').animate({
-          scrollTop: 0
-        }, 1500);
-      });
 
       // Mute / unmute video
       $("#btn-mute").click(function() {
