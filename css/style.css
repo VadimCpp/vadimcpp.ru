@@ -40,8 +40,10 @@
 
 .gdg-line {
   display: inline-block;
-  height: 30px;
+  height: 20px;
   width: 10px;
+  position: relative;
+  top: 3px;
 }
 
 .gdg-green {
