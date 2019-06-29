@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vadim Cpp - Телеграм бот «GDG Цензура Bot»</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <div class="container container-center mt-3">
+    <div class="bg-light m-2 p-3 rounded">
+      <div class="d-flex justify-content-center">        
+        <!-- <img class="img-fluid rounded" src="img/projects/gorkogo55-192x192.jpg" alt="gsgusev" /> -->
+      </div>
+      <h1 class="h1 mt-2 mb-3 d-flex justify-content-center">        
+        Телеграм бот «GDG Цензура Bot»
+      </h1>
+      <!-- <p>
+        ТЦ «Две пятерки» - очень интересное место по своей структуре.
+        В одном знании находится много собственников и арендаторов.
+        Если вам интересно, как там все устроено, читайте раздел
+        <a href="https://frontend-basics.blogspot.com/2019/05/first-review-gorkogo55.html">Структура ТЦ «Две пятерки»</a> в соответствующей записи моего блога.       
+      </p>
+      <p>
+        Сайт состоит из двух частей: лендинг и веб-приложение.
+        Лендинг создан с применением технологии Bootstrap. 
+        Веб-приложение создано с использованием фрейворка ReactJS.
+      </p>
+      <p>
+        Изначально этот сайт является студенческим проектом Дмитрия.
+        Со временем мы заметили стабильную посещаемость и продолжили работу над сайтом.          
+      </p>
+      <p>
+        Посмотрите, какой красивый сайт!
+      </p>
+      <p class="text-center pt-3">        
+        <a class="btn btn-link" href="http://gorkogo55.ru/">Перейти на сайт gorkogo55.ru</a>
+      </p>
+      <p class="pt-5">
+        Вам понравился сайт?
+      </p>
+      <p class="text-center">
+        <button id="btn-yes" class="btn btn-success mr-2 pl-3 pr-3">Да</button>
+        <button id="btn-no" class="btn btn-danger ml-2 pl-3 pr-3">Нет</button>
+      </p>
+      <p id="block-yes" style="display:none;" class="pt-4">
+        Искренняя похвала - это всегда приятно. Свяжитесь со мной и я сделаю вам такой же лендинг всего за 10000₽,
+        а веб-приложение за 30000₽. Или все вместе за 35000₽
+      </p>
+      <p id="block-no" style="display:none;" class="pt-4">
+        Хорошо. Критика важна для меня не меньше, чем для одного известного московского дизайнера.
+        Пожалуйста, помогите сделать сайт лучше. Расскажите, что вам не понравилось?
+      </p>
+      <div id="block-contacts" style="display:none;">      
+        <p class="pt-4">Контакты:
+            <ul class="pl-0 list-unstyled">
+              <li><a href="https://www.linkedin.com/in/vadym-kaninskyi/">linkedin</a>,</li> 
+              <li><a href="https://vk.com/vadimcpp">вконтакте</a>,</li>
+              <li><a href="https://www.facebook.com/vadimcpp">фейсбук</a>, </li>
+              <li><a href="https://twitter.com/VadimCpp">твиттер</a>, </li>
+              <li><a href="https://www.instagram.com/vadimcpp/">инстаграм</a>,</li>
+              <li><a href="https://t.me/vadimcpp">телеграм</a>, </li>
+              <li><a href="mailto:vadim.cpp@gmail.com">email</a></li>
+            </ul>
+          </p>
+      </div> -->
+    </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $('#btn-yes').click(function() {
+      $('#block-no').hide();
+      $('#block-yes').show();
+      $('#block-contacts').show();
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#block-contacts").offset().top
+      }, 2000);
+    });
+
+    $('#btn-no').click(function() {
+      $('#block-yes').hide();
+      $('#block-no').show();
+      $('#block-contacts').show();
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#block-contacts").offset().top
+      }, 2000);
+    });
+  </script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+              try {
+                  w.yaCounter50351506 = new Ya.Metrika2({
+                      id:50351506,
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true,
+                      webvisor:true
+                  });
+              } catch(e) { }
+          });
+
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+      })(document, window, "yandex_metrika_callbacks2");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/50351506" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+</body>
+</html>
