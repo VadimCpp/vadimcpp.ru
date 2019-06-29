@@ -103,22 +103,24 @@
   crossorigin="anonymous"></script>
 
   <script type="text/javascript">
-    $('#btn-yes').click(function() {
-      $('#block-no').hide();
-      $('#block-yes').show();
-      $('#block-contacts').show();
-      $([document.documentElement, document.body]).animate({
-          scrollTop: $("#block-contacts").offset().top
-      }, 2000);
-    });
+    $(document).ready(function() {
+      $('#btn-yes').click(function() {
+        $('#block-no').hide();
+        $('#block-yes').show();
+        $('#block-contacts').show();
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#block-contacts").offset().top
+        }, 2000);
+      });
 
-    $('#btn-no').click(function() {
-      $('#block-yes').hide();
-      $('#block-no').show();
-      $('#block-contacts').show();
-      $([document.documentElement, document.body]).animate({
-          scrollTop: $("#block-contacts").offset().top
-      }, 2000);
+      $('#btn-no').click(function() {
+        $('#block-yes').hide();
+        $('#block-no').show();
+        $('#block-contacts').show();
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#block-contacts").offset().top
+        }, 2000);
+      });
     });
   </script>
 
