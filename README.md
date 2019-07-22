@@ -1,16 +1,5 @@
 # vadimcpp.ru
 
-Personal website
+> Персональный сайт
 
-Blocks:
-* GDGCensorBot block
-* Skills 
-* Websites
-
-
-## Contributors
-
-* [t.me/vadimcpp](https://t.me/vadimcpp)
-* [t.me/sup_soc](https://t.me/sup_soc)
-
-
+Подробнее о сайте можно почитать в [блоге](https://frontend-basics.blogspot.com/2019/06/blog-post.html)
