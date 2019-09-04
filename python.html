@@ -31,6 +31,15 @@
         Язык программирования Python
       </h1>
       <p>
+        <ul>
+          <li><a href="/python/laba1.html">Лабораторная работа №1</a></li>
+          <li>Лабораторная работа №2</li>
+          <li>Лабораторная работа №3</li>
+          <li>Лабораторная работа №4</li>
+          <li>Лабораторная работа №5</li>
+        </ul>
+      </p>
+      <p>
         Эта страница будет содержать все обучающие материалы по языку программирования Python. 
         Лабораторные работы и вопросы и ответы к экзаменационным билетам.
       </p>
@@ -73,9 +82,9 @@
       $('#btn-yes').click(function() {
         $('#block-no').hide();
         $('#block-yes').show();
-        $('#block-contacts').show();
+        $('#block-contacts').hide();
         $([document.documentElement, document.body]).animate({
-            scrollTop: $("#block-contacts").offset().top
+            scrollTop: $("#block-yes").offset().top
         }, 2000);
       });
 
