@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Python - Лабораторная работа №3</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+  <div class="container container-center mt-3">
+    <div class="bg-light m-2 p-3 rounded">
+      <div class="d-flex justify-content-center">        
+        <img class="img-fluid rounded" src="/img/projects/python-192x192.jpg" alt="python" />
+      </div>
+      <h1 class="h2 mt-2 mb-3 text-center">        
+        Лабораторная работа №3
+      </h1>
+      <p>
+        TODO:
+      </p>
+      <!-- <p>
+        Для текущей лабораторной работы не требуется установки интерпретатора Python на рабочий компьютер. 
+        Лабораторную можно выполнять на <a href="https://pyfiddle.io/">сайте pyfiddle</a>
+        или в любой удобной для Вас среде разработки.
+        Также можно начать со 
+        <a href="https://pyfiddle.io/fiddle/83ade8e4-6d24-4006-9704-aeeaa1fd1105/?i=true">стартового шаблона</a>.
+      </p> -->
+      <p class="text-center mt-5 pb-5">
+        <a href="/python.html" class="btn btn-lg btn-primary">Все лабы тут</a>
+      </p>      
+      <p class="pt-5">
+        Вам понравилась лабораторная работа №2?
+      </p>
+      <p class="text-center">
+        <button id="btn-yes" class="btn btn-success mr-2 pl-3 pr-3">Да</button>
+        <button id="btn-no" class="btn btn-danger ml-2 pl-3 pr-3">Нет</button>
+      </p>
+      <p id="block-yes" style="display:none;" class="pt-4">
+        Искренняя похвала - это всегда приятно. Спасибо!
+      </p>
+      <p id="block-no" style="display:none;" class="pt-4">
+        Пожалуйста, помогите сделать лабораторную работу лучше. Расскажите, что можно улучшить?
+      </p>
+      <div id="block-contacts" style="display:none;">      
+        <p class="pt-4">Контакты:
+            <ul class="pl-0 list-unstyled">
+              <li><a href="https://www.linkedin.com/in/vadym-kaninskyi/">linkedin</a>,</li> 
+              <li><a href="https://vk.com/vadimcpp">вконтакте</a>,</li>
+              <li><a href="https://www.facebook.com/vadimcpp">фейсбук</a>, </li>
+              <li><a href="https://twitter.com/VadimCpp">твиттер</a>, </li>
+              <li><a href="https://www.instagram.com/vadimcpp/">инстаграм</a>,</li>
+              <li><a href="https://t.me/vadimcpp">телеграм</a>, </li>
+              <li><a href="mailto:vadim.cpp@gmail.com">email</a></li>
+            </ul>
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#btn-yes').click(function() {
+        $('#block-no').hide();
+        $('#block-yes').show();
+        $('#block-contacts').hide();
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#block-yes").offset().top
+        }, 2000);
+      });
+
+      $('#btn-no').click(function() {
+        $('#block-yes').hide();
+        $('#block-no').show();
+        $('#block-contacts').show();
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#block-contacts").offset().top
+        }, 2000);
+      });
+    });
+  </script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+              try {
+                  w.yaCounter50351506 = new Ya.Metrika2({
+                      id:50351506,
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true,
+                      webvisor:true
+                  });
+              } catch(e) { }
+          });
+
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+      })(document, window, "yandex_metrika_callbacks2");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/50351506" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+</body>
+</html>
