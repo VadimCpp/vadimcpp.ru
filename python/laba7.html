@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vadim Cpp - Python</title>
+  <title>Python - Лабораторная работа №7</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -18,36 +18,58 @@
 
   <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
   <div class="container container-center mt-3">
     <div class="bg-light m-2 p-3 rounded">
       <div class="d-flex justify-content-center">        
-        <img class="img-fluid rounded" src="img/projects/python-192x192.jpg" alt="python" />
+        <img class="img-fluid rounded" src="/img/projects/python-192x192.jpg" alt="python" />
       </div>
       <h1 class="h2 mt-2 mb-3 text-center">        
-        Язык программирования Python
+        Лабораторная работа №7
       </h1>
       <p>
-        <ul>
-          <li><a href="/python/laba1.html">Лабораторная работа №1 (Арифметические операции)</a></li>
-          <li><a href="/python/laba2.html">Лабораторная работа №2 (Функции)</a></li>
-          <li><a href="/python/laba3.html">Лабораторная работа №3 (Классы)</a></li>
-          <li><a href="/python/laba4.html">Лабораторная работа №4 (JSON)</a></li>
-          <li><a href="/python/laba5.html">Лабораторная работа №5 (Творчество и строки)</a></li>
-          <li><a href="/python/laba6.html">Лабораторная работа №6 (Сетевые запросы)</a></li>
-          <li><a href="/python/laba7.html">Лабораторная работа №7 (Прогноз погоды)</a></li>
-          <li>TODO: всего будет 12 лаб</li>
-        </ul>
+        В творческой <a href="laba5.html"> лабораторной работе №5</a> осуществлялся вывод прогноза погоды
+        по существующим данным в формате JSON. Затем в <a href="laba6.html"> лабораторной работе №6</a>
+        осуществлялся сетевой запрос к сервису погоды.
+      </p>
+      
+      <p>
+        В данной лабораторной работе необходимо написать программу, которая выводит на экран прогноз погоды.
+        Необходимо использовать наработки прошлых лабораторных работ. 
       </p>
       <p>
-        Эта страница будет содержать все обучающие материалы по языку программирования Python. 
-        Лабораторные работы и вопросы и ответы к экзаменационным билетам.
+        Пожелания:
+        <ul>
+          <li>
+            не пишите программу с нуля. Скопируйте код одной из
+            лабораторных работ и дополните его кодом другой лабораторной работы;
+          </li>
+          <li>лаконичный вывод информации лучше, чем непонятный;</li>
+          <li>постарайтесь справится с работой в течении лабораторной работы;</li>
+          <li>помогайте своим однограпникам;</li>
+          <li>сделайте вывод прогноза на 3-5 дней.</li>
+        </ul>        
       </p>
+      <p>
+        Пример:
+        <pre>
+Kaliningrad forecast
+Today     +7..+12  sun
+Tomorrow  +3..+7   cloud
+15 oct    +4..+6   light rain
+16 oct    +3..+6   rain
+17 oct    +2..+9   rain
+        </pre>
+      </p>
+      <p>
+        Отдельного примера кода для данной лабораторной работы нет. 
+        Смотреть примеры кода в прошлых лабораторных работах.
+      </p>      
       <p class="pt-5">
-        Вам понравился раздел?
+        Вам понравилась лабораторная работа №7?
       </p>
       <p class="text-center">
         <button id="btn-yes" class="btn btn-success mr-2 pl-3 pr-3">Да</button>
@@ -57,7 +79,7 @@
         Искренняя похвала - это всегда приятно. Спасибо!
       </p>
       <p id="block-no" style="display:none;" class="pt-4">
-        Пожалуйста, помогите сделать раздел лучше. Расскажите, что вам не понравилось?
+        Пожалуйста, помогите сделать лабораторную работу лучше. Расскажите, что можно улучшить?
       </p>
       <div id="block-contacts" style="display:none;">      
         <p class="pt-4">Контакты:
