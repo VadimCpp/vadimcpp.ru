@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vadim Cpp - Python</title>
+  <title>Python - Лабораторная работа №8</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -18,37 +18,39 @@
 
   <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
   <div class="container container-center mt-3">
     <div class="bg-light m-2 p-3 rounded">
       <div class="d-flex justify-content-center">        
-        <img class="img-fluid rounded" src="img/projects/python-192x192.jpg" alt="python" />
+        <img class="img-fluid rounded" src="/img/projects/python-192x192.jpg" alt="python" />
       </div>
       <h1 class="h2 mt-2 mb-3 text-center">        
-        Язык программирования Python
+        Лабораторная работа №8
       </h1>
       <p>
-        <ul>
-          <li><a href="/python/laba1.html">Лабораторная работа №1 (Арифметические операции)</a></li>
-          <li><a href="/python/laba2.html">Лабораторная работа №2 (Функции)</a></li>
-          <li><a href="/python/laba3.html">Лабораторная работа №3 (Классы)</a></li>
-          <li><a href="/python/laba4.html">Лабораторная работа №4 (JSON)</a></li>
-          <li><a href="/python/laba5.html">Лабораторная работа №5 (Творчество и строки)</a></li>
-          <li><a href="/python/laba6.html">Лабораторная работа №6 (Сетевые запросы)</a></li>
-          <li><a href="/python/laba7.html">Лабораторная работа №7 (Прогноз погоды)</a></li>
-          <li><a href="/python/laba8.html">Лабораторная работа №8 (Интерпретатор)</a></li>
-          <li>TODO: всего будет 12 лаб</li>
-        </ul>
+        В данной лабораторной работе рассмотрим разработку простейшего интерпретатора.
       </p>
       <p>
-        Эта страница будет содержать все обучающие материалы по языку программирования Python. 
-        Лабораторные работы и вопросы и ответы к экзаменационным билетам.
+        Перед началом написания интерпретатора необходимо определится с синтаксисов языка, который будем интерпретировать.
+        Для записи синтаксиса обычно используют 
+        <a href="https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D0%B0_%D0%91%D1%8D%D0%BA%D1%83%D1%81%D0%B0_%E2%80%94_%D0%9D%D0%B0%D1%83%D1%80%D0%B0">
+          формы Бэкуса-Наура
+        </a>. Начальный синтаксис будет выглядеть так:
+        <pre>
+&ltexpression&gt ::= &ltdigit&gt|&ltexpression&gt&ltoperation&gt&ltdigit&gt
+&ltoperation&gt ::= +|-|*|/      
+&ltdigit&gt ::= 1|2|3|4|5|6|7|8|9  
+        </pre> 
+      </p>
+      <p>
+        <a href="https://pyfiddle.io/fiddle/f67f8d99-33da-4738-8c19-372abc2402b4/?i=true">Пример кода</a> содержит
+        простейший интерпретатор кода.
       </p>
       <p class="pt-5">
-        Вам понравился раздел?
+        Вам понравилась лабораторная работа №8?
       </p>
       <p class="text-center">
         <button id="btn-yes" class="btn btn-success mr-2 pl-3 pr-3">Да</button>
@@ -58,7 +60,7 @@
         Искренняя похвала - это всегда приятно. Спасибо!
       </p>
       <p id="block-no" style="display:none;" class="pt-4">
-        Пожалуйста, помогите сделать раздел лучше. Расскажите, что вам не понравилось?
+        Пожалуйста, помогите сделать лабораторную работу лучше. Расскажите, что можно улучшить?
       </p>
       <div id="block-contacts" style="display:none;">      
         <p class="pt-4">Контакты:
