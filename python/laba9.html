@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vadim Cpp - Python</title>
+  <title>Python - Лабораторная работа №9</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -18,38 +18,45 @@
 
   <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
   <div class="container container-center mt-3">
     <div class="bg-light m-2 p-3 rounded">
       <div class="d-flex justify-content-center">        
-        <img class="img-fluid rounded" src="img/projects/python-192x192.jpg" alt="python" />
+        <img class="img-fluid rounded" src="/img/projects/python-192x192.jpg" alt="python" />
       </div>
       <h1 class="h2 mt-2 mb-3 text-center">        
-        Язык программирования Python
+        Лабораторная работа №9
       </h1>
       <p>
-        <ul>
-          <li><a href="/python/laba1.html">Лабораторная работа №1 (Арифметические операции)</a></li>
-          <li><a href="/python/laba2.html">Лабораторная работа №2 (Функции)</a></li>
-          <li><a href="/python/laba3.html">Лабораторная работа №3 (Классы)</a></li>
-          <li><a href="/python/laba4.html">Лабораторная работа №4 (JSON)</a></li>
-          <li><a href="/python/laba5.html">Лабораторная работа №5 (Творчество и строки)</a></li>
-          <li><a href="/python/laba6.html">Лабораторная работа №6 (Сетевые запросы)</a></li>
-          <li><a href="/python/laba7.html">Лабораторная работа №7 (Прогноз погоды)</a></li>
-          <li><a href="/python/laba8.html">Лабораторная работа №8 (Интерпретатор)</a></li>
-          <li><a href="/python/laba9.html">Лабораторная работа №9 (Исключения)</a></li>
-          <li>TODO: всего будет 12 лаб</li>
-        </ul>
+        В данной лабораторной работе знакомимся с исключениями.
       </p>
       <p>
-        Эта страница будет содержать все обучающие материалы по языку программирования Python. 
-        Лабораторные работы и вопросы и ответы к экзаменационным билетам.
+        Основу лабораторной работы составляет интермпретарор языка из любораторной работы №8. Начальный синтаксис интерпретируемого языка остается прежним:
+        <pre>
+&ltexpression&gt ::= &ltdigit&gt|&ltexpression&gt&ltoperation&gt&ltdigit&gt
+&ltoperation&gt ::= +|-     
+&ltdigit&gt ::= 1|2|3|4|5|6|7|8|9  
+        </pre> 
+      </p>
+      <p>
+        Начать выполнение лабораторной работы со
+        <a href="https://pyfiddle.io/fiddle/e66539fd-53a3-42f2-9ecf-8289e7c2e6d2/?i=true">
+          стартового шаблона
+        </a>.
+      </p>
+      <p>
+        Задание на лабораторную работу:
+        <ul>
+          <li>Исследовать код и обработку ошибок;</li>
+          <li>Улучшить обработку ошибок;</li>
+          <li>По желанию выполнить задачи с меткой <b>OPTIONAL</b>.</li>
+        </ul>
       </p>
       <p class="pt-5">
-        Вам понравился раздел?
+        Вам понравилась лабораторная работа №9?
       </p>
       <p class="text-center">
         <button id="btn-yes" class="btn btn-success mr-2 pl-3 pr-3">Да</button>
@@ -59,7 +66,7 @@
         Искренняя похвала - это всегда приятно. Спасибо!
       </p>
       <p id="block-no" style="display:none;" class="pt-4">
-        Пожалуйста, помогите сделать раздел лучше. Расскажите, что вам не понравилось?
+        Пожалуйста, помогите сделать лабораторную работу лучше. Расскажите, что можно улучшить?
       </p>
       <div id="block-contacts" style="display:none;">      
         <p class="pt-4">Контакты:
