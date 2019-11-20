@@ -34,6 +34,12 @@
         В данной лабораторной работе знакомимся с <a href="https://docs.python.org/3/tutorial/classes.html#inheritance">наследованием</a>.
       </p>
       <p>
+        В коде десятой лабораторной работы класс ExtendedInterpreter является наследником класса SimpleInterpreter.
+        Метод класса ExtendedInterpreter runProgram вызывает аналогичный метод родительского класса SimpleInterpreter runProgram. 
+        Прошу обратить внимание на то, что в коде родетильского класса SimpleInterpreter вызывается метод readExpression, который 
+        принадлежит унаследованному классу ExtendedInterpreter. Это и есть <b>полиморфизм</b>.
+      </p>
+      <p>
         Начать выполнение лабораторной работы со
         <a href="https://pyfiddle.io/fiddle/5e8f9022-5427-4257-9a8b-4d8a2b9f3262/?i=true">
           стартового шаблона
