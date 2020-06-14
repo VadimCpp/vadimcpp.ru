@@ -3,7 +3,7 @@
 */.gitkeep
 .git-ftp-ignore
 .git-ftp-include
-.github
+video
 LICENSE
 README.md
 gulpfile.js
