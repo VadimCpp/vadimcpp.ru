@@ -291,3 +291,28 @@ footer {
   font-family: 'Roboto', sans-serif;
   text-shadow: 0 0 4px #212529;
 }
+
+.contacts {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contacts__item {
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #444;
+  color: white;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contacts__icon {
+  width: 20px;
+  height: 20px;
+}
