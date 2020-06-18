@@ -316,3 +316,9 @@ footer {
   width: 20px;
   height: 20px;
 }
+
+.hr {
+  height: 0;
+  border-top: 3px solid #444;
+  border-radius: 3px;
+}
