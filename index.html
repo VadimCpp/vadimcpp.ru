@@ -64,6 +64,7 @@
           <a class="dropdown-item" href="#" id="btn-bots">Боты</a>
           <a class="dropdown-item" href="#" id="btn-apps">Приложения</a>
           <a class="dropdown-item" href="#" id="btn-other">Другое</a>
+          <a class="dropdown-item" href="#" id="btn-all">Все</a>
         </div>
       </div>
       <div class="pt-4">
@@ -370,26 +371,33 @@
         $('#dropdown-filter').html('Сайты');
       });
       $('#btn-bots').click(function() {
-        $('.filter-sites').hide();
         $('.filter-bots').show();
+        $('.filter-sites').hide();
         $('.filter-apps').hide();
         $('.filter-other').hide();
         $('#dropdown-filter').html('Боты');
       });
       $('#btn-apps').click(function() {
+        $('.filter-apps').show();
         $('.filter-sites').hide();
         $('.filter-bots').hide();
-        $('.filter-apps').show();
         $('.filter-other').hide();
         $('#dropdown-filter').html('Приложения');
       });
       $('#btn-other').click(function() {
+        $('.filter-other').show();
         $('.filter-sites').hide();
         $('.filter-bots').hide();
         $('.filter-apps').hide();
-        $('.filter-other').show();
         $('#dropdown-filter').html('Другое');
       });
+      $('#btn-all').click(function() {
+        $('.filter-other').show();
+        $('.filter-sites').show();
+        $('.filter-bots').show();
+        $('.filter-apps').show();
+        $('#dropdown-filter').html('Все проекты');
+      });      
     });
   </script>
 
