@@ -364,31 +364,31 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $('#btn-sites').click(function() {
-        $('.filter-sites').show();
         $('.filter-bots').hide();
         $('.filter-apps').hide();
         $('.filter-other').hide();
+        $('.filter-sites').show();
         $('#dropdown-filter').html('Сайты');
       });
       $('#btn-bots').click(function() {
-        $('.filter-bots').show();
         $('.filter-sites').hide();
         $('.filter-apps').hide();
         $('.filter-other').hide();
+        $('.filter-bots').show();
         $('#dropdown-filter').html('Боты');
       });
       $('#btn-apps').click(function() {
-        $('.filter-apps').show();
         $('.filter-sites').hide();
         $('.filter-bots').hide();
         $('.filter-other').hide();
+        $('.filter-apps').show();
         $('#dropdown-filter').html('Приложения');
       });
       $('#btn-other').click(function() {
-        $('.filter-other').show();
         $('.filter-sites').hide();
         $('.filter-bots').hide();
         $('.filter-apps').hide();
+        $('.filter-other').show();
         $('#dropdown-filter').html('Другое');
       });
       $('#btn-all').click(function() {
