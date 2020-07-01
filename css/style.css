@@ -322,3 +322,32 @@ footer {
   border-top: 3px solid #444;
   border-radius: 3px;
 }
+
+.link {
+  opacity: 0.8;
+  text-decoration: none;
+  transition-duration: .3s;
+}
+
+.link:link {
+  text-decoration: none;
+}
+
+.link:visited {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.link:active {
+  text-decoration: none;
+}
+
+.link__img {
+  width: 16px;
+  height: 16px;
+}
+

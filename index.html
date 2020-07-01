@@ -68,7 +68,12 @@
         </div>
       </div>
       <div class="pt-4">
-        <h2 class="h3 text-center mb-4">Портфолио</h2>
+        <h2 id="portfolio" class="h3 text-center mb-4">
+          <a class="link" href="#portfolio">
+            <img class="link__img" src="./img/icons/link-solid.svg" alt="link"/>
+          </a>
+          Портфолио
+        </h2>
 
         <!-- dreams -->
         <div class="card text-center mb-3 filter-apps">
@@ -369,6 +374,9 @@
         $('.filter-other').hide();
         $('.filter-sites').show();
         $('#dropdown-filter').html('Сайты');
+        $([document.documentElement, document.body]).animate({
+          scrollTop: $("#portfolio").offset().top
+        }, 500);
       });
       $('#btn-bots').click(function() {
         $('.filter-sites').hide();
@@ -376,6 +384,9 @@
         $('.filter-other').hide();
         $('.filter-bots').show();
         $('#dropdown-filter').html('Боты');
+        $([document.documentElement, document.body]).animate({
+          scrollTop: $("#portfolio").offset().top
+        }, 500);
       });
       $('#btn-apps').click(function() {
         $('.filter-sites').hide();
@@ -383,6 +394,9 @@
         $('.filter-other').hide();
         $('.filter-apps').show();
         $('#dropdown-filter').html('Приложения');
+        $([document.documentElement, document.body]).animate({
+          scrollTop: $("#portfolio").offset().top
+        }, 500);
       });
       $('#btn-other').click(function() {
         $('.filter-sites').hide();
@@ -390,6 +404,9 @@
         $('.filter-apps').hide();
         $('.filter-other').show();
         $('#dropdown-filter').html('Другое');
+        $([document.documentElement, document.body]).animate({
+          scrollTop: $("#portfolio").offset().top
+        }, 500);
       });
       $('#btn-all').click(function() {
         $('.filter-other').show();
@@ -397,6 +414,9 @@
         $('.filter-bots').show();
         $('.filter-apps').show();
         $('#dropdown-filter').html('Все проекты');
+        $([document.documentElement, document.body]).animate({
+          scrollTop: $("#portfolio").offset().top
+        }, 500);
       });      
     });
   </script>
