@@ -20,8 +20,21 @@
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <!-- Тут подключаем стили виджетов виджетов -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/rc-widgets@0.1.0/dist/rcWidgets.css">
+  <!-- 
+    1. Подключаем библиотеки
+    https://rcwidgets.front-end.rocks/docs/getting-started-pre-install
+  -->
+
+  <!-- CSS for RC Widgets. -->
+  <link href="https://cdn.jsdelivr.net/npm/rc-widgets@0.1.0/dist/rcWidgets.css" rel="stylesheet"/>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- kendo -->
+  <script src="http://kendo.cdn.telerik.com/2019.2.514/js/kendo.all.min.js"></script>
+  <!-- RC Widgets Library -->
+  <script src="https://cdn.jsdelivr.net/npm/rc-widgets@0.1.6/dist/rcWidgets-cdn.js"></script>
+  <!-- moment -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 </head>
 
 <body>
@@ -40,6 +53,11 @@
         <a class="btn btn-link" href="https://rcdev.roscomputing.net:6555/widgets/">Посмотреть докумендацию на rcdev</a> <br>
         <a class="btn btn-link" href="https://github.com/roscomputing/rcWidgets">Посмотреть исходники на Github</a>
       </p>
+      <section id="widgets">
+        <!-- Календарь -->
+        <p>Нажмите, пожалуйста, кнопку "Календарь" для выбора даты:</p>
+        <button type="button" class="blue-button" id="calendar">календарь</button>     
+      </section>
       <p class="pt-5">
         Вам понравились виджеты?
       </p>
@@ -127,7 +145,31 @@
   <noscript><div><img src="https://mc.yandex.ru/watch/50351506" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
 
-  <!-- Тут подключаем скрипты виджетов -->
-  <script src="https://cdn.jsdelivr.net/npm/rc-widgets@0.1.0/dist/rcWidgets-cdn.js"></script>
+  <!-- 2. Инициализация по умолчанию -->
+  <script>
+    window.rc = rcWidgets({
+      selector: '#widgets',
+      log: message => {
+        if (message) {
+          $.notify(message, { position:"bottom center", className: 'success' });
+        }
+      }
+    });
+  </script>
+
+  <!-- 3. Пример виджета "календарь" -->
+  <script>
+    $('#calendar').click(function(e) {
+      rc.calendar({
+        pageX: e.pageX,
+        pageY: e.pageY,
+        onlyDate: true,
+        type: 1,
+        fromLabel: '',
+        from: null,
+        to: null,
+      });
+    });
+  </script>
 </body>
 </html>
