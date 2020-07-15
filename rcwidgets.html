@@ -52,7 +52,9 @@
         <a class="btn btn-link" href="https://github.com/roscomputing/rcWidgets">Посмотреть исходники на Github</a>
       </p>
       <section id="widgets">
-        <!-- Тут будут проинициализированы виджеты -->        
+        <!-- Календарь -->
+        <p>Нажмите, пожалуйста, кнопку "Календарь" для выбора даты:</p>
+        <button type="button" class="blue-button" id="calendar">календарь</button>     
       </section>
       <p class="pt-5">
         Вам понравились виджеты?
@@ -150,6 +152,21 @@
           $.notify(message, { position:"bottom center", className: 'success' });
         }
       }
+    });
+  </script>
+
+  <!-- 3. Пример виджета "календарь" -->
+  <script>
+    $('#calendar').click(function(e) {
+      rc.calendar({
+        pageX: e.pageX,
+        pageY: e.pageY,
+        onlyDate: true,
+        type: 1,
+        fromLabel: '',
+        from: null,
+        to: null,
+      });
     });
   </script>
 </body>
