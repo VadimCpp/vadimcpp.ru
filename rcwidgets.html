@@ -51,6 +51,9 @@
         <a class="btn btn-link" href="https://rcdev.roscomputing.net:6555/widgets/">Посмотреть докумендацию на rcdev</a> <br>
         <a class="btn btn-link" href="https://github.com/roscomputing/rcWidgets">Посмотреть исходники на Github</a>
       </p>
+      <section id="widgets">
+        <!-- Тут будут проинициализированы виджеты -->        
+      </section>
       <p class="pt-5">
         Вам понравились виджеты?
       </p>
@@ -137,5 +140,17 @@
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/50351506" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
+
+  <!-- 2. Инициализация по умолчанию -->
+  <script>
+    window.rc = rcWidgets({
+      selector: '#widgets',
+      log: message => {
+        if (message) {
+          $.notify(message, { position:"bottom center", className: 'success' });
+        }
+      }
+    });
+  </script>
 </body>
 </html>
