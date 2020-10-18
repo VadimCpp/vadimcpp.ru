@@ -52,61 +52,8 @@
       <p>
         <b>NOTE!</b> Курс будет неоднократно улучшаться, замечания и конструктивная критика приветствуются.
       </p>
-      <p class="pt-5">
-        Вам понравился раздел?
-      </p>
-      <p class="text-center">
-        <button id="btn-yes" class="btn btn-success mr-2 pl-3 pr-3">Да</button>
-        <button id="btn-no" class="btn btn-danger ml-2 pl-3 pr-3">Нет</button>
-      </p>
-      <p id="block-yes" style="display:none;" class="pt-4">
-        Искренняя похвала - это всегда приятно. Спасибо!
-      </p>
-      <p id="block-no" style="display:none;" class="pt-4">
-        Пожалуйста, помогите сделать раздел лучше. Расскажите, что вам не понравилось?
-      </p>
-      <div id="block-contacts" style="display:none;">      
-        <p class="pt-4">Контакты:
-            <ul class="pl-0 list-unstyled">
-              <li><a href="https://www.linkedin.com/in/vadym-kaninskyi/">linkedin</a>,</li> 
-              <li><a href="https://vk.com/vadimcpp">вконтакте</a>,</li>
-              <li><a href="https://www.facebook.com/vadimcpp">фейсбук</a>, </li>
-              <li><a href="https://twitter.com/VadimCpp">твиттер</a>, </li>
-              <li><a href="https://www.instagram.com/vadimcpp/">инстаграм</a>,</li>
-              <li><a href="https://t.me/vadimcpp">телеграм</a>, </li>
-              <li><a href="mailto:vadim.cpp@gmail.com">email</a></li>
-            </ul>
-          </p>
-      </div>
     </div>
   </div>
-
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#btn-yes').click(function() {
-        $('#block-no').hide();
-        $('#block-yes').show();
-        $('#block-contacts').hide();
-        $([document.documentElement, document.body]).animate({
-            scrollTop: $("#block-yes").offset().top
-        }, 2000);
-      });
-
-      $('#btn-no').click(function() {
-        $('#block-yes').hide();
-        $('#block-no').show();
-        $('#block-contacts').show();
-        $([document.documentElement, document.body]).animate({
-            scrollTop: $("#block-contacts").offset().top
-        }, 2000);
-      });
-    });
-  </script>
 
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
