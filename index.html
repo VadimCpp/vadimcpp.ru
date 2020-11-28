@@ -26,6 +26,7 @@
 <body>
   <div class="container container-center mt-3">
     <div class="bg-light m-2 p-3 rounded">
+      <!-- Фото -->
       <div class="d-flex justify-content-center">
         <img src="./img/avatar.jpg?v2" width="200" height="200" class="rounded"/>
       </div>
@@ -33,6 +34,8 @@
         Вадим Канинский
       </h1>
       <h2 class="h3 text-center mb-4">программист</h2>
+
+      <!-- Контакты -->
       <div class="contacts">
         <a class="contacts__item" href="tg://resolve?domain=vadimcpp">
           <img class="contacts__icon" src="./img/icons/telegram-plane-brands.svg" alt="TG"/>
@@ -53,23 +56,40 @@
           <img class="contacts__icon" src="./img/icons/twitter-brands.svg" alt="FB"/>
         </a>
       </div>
+
+      <!-- Описания -->
       <p>
         Разрабатываю сайты, боты и мобильные приложения. 
         Преподаю программирование в <a href="https://htmlacademy.ru/">htmlacademy</a>. 
         Работаю в компании <a href="https://www.roscomputing.com/">Роскомпьютинг</a>.
       </p>
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Все проекты
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdown-filter">
-          <a class="dropdown-item" href="#" id="btn-sites">Сайты</a>
-          <a class="dropdown-item" href="#" id="btn-bots">Боты</a>
-          <a class="dropdown-item" href="#" id="btn-apps">Приложения</a>
-          <a class="dropdown-item" href="#" id="btn-other">Другое</a>
-          <a class="dropdown-item" href="#" id="btn-all">Все</a>
+
+      <!-- Отзывы -->
+      <div class="pt-4">
+        <h2 id="reference" class="h3 text-center   mb-4">
+          <a class="link" href="#reference">
+            <img class="link__img" src="./img/icons/link-solid.svg" alt="link"/>
+          </a>
+          Отзывы
+        </h2>
+        <div>
+          <p>
+            <i>
+              «Мой сайт, благодаря  его создателю Вадиму Канинскому, прекрасно работает на протяжение года.   
+              При создании были учтены все мои пожелания: он прост, хорошо оформлен, информативен и очень удобен для посетителей. Статистика сейта легко просматривается по заявленным показателям и уверенно растет. За текущий год  прошло несколько обновлений по моему запросу и профессионально учтены все рекомендации и пожелания.
+              Спасибо за сотрудничество и своевременную поддержку сайта»
+            </i>
+          </p>
+          <p class="mb-0 pb-0">
+            Анна Граб,
+          </p>
+          <p class="mt-0 pt-0 mb-3">
+            <a href="https://annagrab.ru/">annagrab.ru</a>
+          </p>
         </div>
       </div>
+
+      <!-- Портфолио -->
       <div class="pt-4">
         <h2 id="portfolio" class="h3 text-center mb-4">
           <a class="link" href="#portfolio">
@@ -77,6 +97,19 @@
           </a>
           Портфолио
         </h2>
+
+        <div class="dropdown mb-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Все проекты
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdown-filter">
+            <a class="dropdown-item" href="#" id="btn-sites">Сайты</a>
+            <a class="dropdown-item" href="#" id="btn-bots">Боты</a>
+            <a class="dropdown-item" href="#" id="btn-apps">Приложения</a>
+            <a class="dropdown-item" href="#" id="btn-other">Другое</a>
+            <a class="dropdown-item" href="#" id="btn-all">Все</a>
+          </div>
+        </div>
 
         <!-- dreams -->
         <div class="card text-center mb-3 filter-apps">
