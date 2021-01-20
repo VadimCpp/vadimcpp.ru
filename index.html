@@ -52,8 +52,8 @@
         <a class="contacts__item" href="https://www.linkedin.com/in/vadym-kaninskyi/">
           <img class="contacts__icon" src="./img/icons/linkedin-in-brands.svg" alt="IG"/>
         </a>
-        <a class="contacts__item" href="https://twitter.com/VadimCpp">
-          <img class="contacts__icon" src="./img/icons/twitter-brands.svg" alt="FB"/>
+        <a class="contacts__item" href="https://github.com/vadimcpp">
+          <img class="contacts__icon" src="./img/icons/github-brands.svg" alt="GH"/>
         </a>
       </div>
 
@@ -63,6 +63,23 @@
         Преподаю программирование в <a href="https://htmlacademy.ru/">htmlacademy</a>. 
         Работаю в компании <a href="https://www.roscomputing.com/">Роскомпьютинг</a>.
       </p>
+
+      <section class="pt-2 pb-5">
+        <div class="row">
+          <div class="col-sm text-center pt-4">
+            <a class="btn btn-outline-primary" href="#reference">Отзывы</a>
+          </div>
+          <div class="col-sm text-center pt-4">
+            <a class="btn btn-outline-primary" href="#portfolio">Портфолио</a>
+          </div>
+          <div class="col-sm text-center pt-4">
+            <a class="btn btn-outline-primary" href="#services">Услуги</a>
+          </div>
+          <div class="col-sm text-center pt-4">
+            <a class="btn btn-outline-primary" href="#support">Поддержка</a>
+          </div>
+        </div>
+      </section>
 
       <!-- Отзывы -->
       <div class="pt-4">
@@ -74,13 +91,14 @@
         </h2>
 
         <div class="row">
-          <div class="col-12 col-md-6">
+          <!-- <div class="col-12 col-md-6">-->
+          <div class="col-12">
             <!-- Отзыв Анны -->
             <div class="card mb-3">
               <div class="card-body">
                 <p>
                   <i>
-                    «Мой сайт, благодаря  его создателю Вадиму Канинскому, прекрасно работает на протяжение года.   
+                    «Мой сайт, благодаря его создателю Вадиму Канинскому, прекрасно работает на протяжение года.   
                     При создании были учтены все мои пожелания: он прост, хорошо оформлен, информативен и очень удобен для посетителей. Статистика сейта легко просматривается по заявленным показателям и уверенно растет. За текущий год  прошло несколько обновлений по моему запросу и профессионально учтены все рекомендации и пожелания.
                     Спасибо за сотрудничество и своевременную поддержку сайта»
                   </i>
@@ -94,8 +112,8 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
-            <!-- Отзыв Артема -->
+          <!-- Отзыв Артема -->
+          <!-- <div class="col-12 col-md-6">
             <div class="card mb-3">
               <div class="card-body">
                 <p>
@@ -114,7 +132,7 @@
                 </p>
               </div>        
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -127,58 +145,6 @@
           Портфолио
         </h2>
 
-        <div class="dropdown mb-3">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Все проекты
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdown-filter">
-            <a class="dropdown-item" href="#" id="btn-sites">Сайты</a>
-            <a class="dropdown-item" href="#" id="btn-bots">Боты</a>
-            <a class="dropdown-item" href="#" id="btn-apps">Приложения</a>
-            <a class="dropdown-item" href="#" id="btn-other">Другое</a>
-            <a class="dropdown-item" href="#" id="btn-all">Все</a>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <!-- events4friends -->
-            <div class="card text-center mb-3 filter-apps filter-bots filter-sites">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <img class="rounded mr-1" src="./img/projects/events4friends-192x192.png" width="24" height="24" alt='events4friends'>
-                  events4friends
-                </h5>
-                <p class="card-text">Сайт, бот и мобильное приложение для сообществ</p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    #nodejs #typescript #reactnative #react #expo
-                  </small>
-                </p>
-                <p class="card-text"></p><a href="events4friends.html" class="btn btn-primary">Подробнее</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <!-- Сайт Анны Граб -->
-            <div class="card text-center mb-3 filter-sites">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <img class="rounded mr-1" src="./img/projects/annagrab-192x192.jpg" width="24" height="24" alt='annagrab'>
-                  Анна Граб
-                </h5>
-                <p class="card-text">Сайт Анны Граб</p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    #html
-                  </small>
-                </p>
-                <p class="card-text"></p><a href="annagrab.html" class="btn btn-primary">Подробнее</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
         <div class="row">
           <div class="col-12 col-md-6">
             <!-- Цензор бот -->
@@ -194,7 +160,43 @@
                     #nodejs
                   </small>
                 </p>
-                <p class="card-text"></p><a href="gdgcensorbot.html" class="btn btn-primary">Подробнее</a></p>
+                <p class="card-text"></p><a href="gdgcensorbot.html" class="btn btn-outline-primary">Подробнее</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <!-- python -->
+            <div class="card text-center mb-3 filter-other">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img class="rounded mr-1" src="./img/projects/python-192x192.jpg" width="24" height="24" alt='python'>
+                  python
+                </h5>
+                <p class="card-text">Курс для студентов</p>
+                <p class="card-text">
+                  <small class="text-muted">
+                    #python
+                  </small>
+                </p>
+                <p class="card-text"></p><a href="python.html" class="btn btn-outline-primary">Подробнее</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <!-- events4friends -->
+            <div class="card text-center mb-3 filter-apps filter-bots filter-sites">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img class="rounded mr-1" src="./img/projects/events4friends-192x192.png" width="24" height="24" alt='events4friends'>
+                  events4friends
+                </h5>
+                <p class="card-text">Сайт, бот и мобильное приложение для сообществ</p>
+                <p class="card-text">
+                  <small class="text-muted">
+                    #nodejs #typescript #reactnative #react #expo
+                  </small>
+                </p>
+                <p class="card-text"></p><a href="events4friends.html" class="btn btn-outline-primary">Подробнее</a></p>
               </div>
             </div>
           </div>
@@ -212,203 +214,77 @@
                     #react
                   </small>
                 </p>
-                <p class="card-text"></p><a href="gorkogo55.html" class="btn btn-primary">Подробнее</a></p>
+                <p class="card-text"></p><a href="gorkogo55.html" class="btn btn-outline-primary">Подробнее</a></p>
               </div>
             </div>
           </div>
         </div>
-    
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <!-- python -->
-            <div class="card text-center mb-3 filter-other">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <img class="rounded mr-1" src="./img/projects/python-192x192.jpg" width="24" height="24" alt='python'>
-                  python
-                </h5>
-                <p class="card-text">Курс для студентов</p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    #python
-                  </small>
-                </p>
-                <p class="card-text"></p><a href="python.html" class="btn btn-primary">Подробнее</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <!-- dreams -->
-            <div class="card text-center mb-3 filter-apps">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <img class="rounded mr-1" src="./img/projects/dreams-192x192.png" width="24" height="24" alt='dreams'>
-                  dreams
-                </h5>
-                <p class="card-text">Мобильное приложение для записи сновидений</p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    #reactnative #expo
-                  </small>
-                </p>
-                <p class="card-text"></p><a href="dreams.html" class="btn btn-primary">Подробнее</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <!-- Steady Heady -->
-            <div class="card text-center mb-3 filter-apps">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <img class="rounded mr-1" src="./img/projects/steadyheady-192x192.png" width="24" height="24" alt='steadyheady'>
-                  Steady Heady
-                </h5>
-                <p class="card-text">Приложение для гольфа Steady Heady</p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    #typescript #reactnative
-                  </small>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <!-- IQITO -->
-            <div class="card text-center mb-3 filter-apps">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <img class="rounded mr-1" src="./img/projects/iqito-192x192.png" width="24" height="24" alt='iqito'>
-                  IQITO
-                </h5>
-                <p class="card-text">Мобильное приложение IQITO</p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    #reactnative
-                  </small>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <!-- Хорошо посидели бот -->
-            <div class="card text-center mb-3 filter-bots">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <img class="rounded mr-1" src="./img/projects/horoshoposidelibot-192x192.jpeg" width="24" height="24" alt='horoshoposidelibot'>
-                  Хорошо посидели бот
-                </h5>
-                <p class="card-text">Телеграм-бот "Хорошо посидели"</p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    #nodejs
-                  </small>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <!-- Календарь-калькулятор -->
-            <div class="card text-center mb-3 filter-sites">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <img class="rounded mr-1" src="./img/projects/calendarcalculator-192x192.png" width="24" height="24" alt='calendarcalculator'>
-                  Календарь-калькулятор
-                </h5>
-                <p class="card-text">Сайт "Календарь-калькулятор"</p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    #jQuery
-                  </small>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <!-- gsgusev -->
-            <div class="card text-center mb-3 filter-sites">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <img class="rounded mr-1" src="./img/projects/gsgusev-192x192.png" width="24" height="24" alt='gsgusev'>
-                  gsgusev
-                </h5>
-                <p class="card-text">Сайт коттеджного поселка</p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    #vue
-                  </small>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <!-- Виджеты РосКомпьютинг -->
-            <div class="card text-center mb-3 filter-other">
-            <div class="card-body">
-              <h5 class="card-title">
-                <img class="rounded mr-1" src="./img/projects/rcwidgets-192x192.png" width="24" height="24" alt='rcwidgets'>
-                Виджеты
-              </h5>
-              <p class="card-text">Виджеты РосКомпьютинг</p>
-              <p class="card-text">
-                <small class="text-muted">
-                  #javascript
-                </small>
-              </p>
-              <p class="card-text"></p><a href="rcwidgets.html" class="btn btn-primary">Подробнее</a></p>
-            </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <!-- Игра "Лабиринт" -->
-            <div class="card text-center mb-3 filter-sites">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <img class="rounded mr-1" src="./img/projects/labyrinth-192x192.png" width="24" height="24" alt='labyrinth'>
-                  Игра "Лабиринт"
-                </h5>
-                <p class="card-text">Браузерная игра "Лабиринт" + генератор лабиринтов</p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    #javascript
-                  </small>
-                </p>
-                <p class="card-text"></p><a href="https://vadimcpp.github.io/Labyrinth/" class="btn btn-primary">Играть</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <!-- The Elite Games -->
-            <div class="card text-center mb-3 filter-sites">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <img class="rounded mr-1" src="./img/projects/elitegames-192x192.jpg" width="24" height="24" alt='elitegames'>
-                  The Elite Games
-                </h5>
-                <p class="card-text">Сайт The Elite Games</p>
-                <p class="card-text">
-                  <small class="text-muted">
-                    #javascript
-                  </small>
-                </p>
-                <p class="card-text"></p><a href="http://vadimcpp.github.io/TheEliteGames/" class="btn btn-primary">Посетить сайт</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      <!-- Услуги -->
+      <section class="pt-4">
+        <h2 id="services" class="h3 text-center mb-4">
+          <a class="link" href="#services">
+            <img class="link__img" src="./img/icons/link-solid.svg" alt="link"/>
+          </a>
+          Услуги
+        </h2>
+        <div class="row">
+          <div class="col-12">
+            <div class="card mb-3">
+              <div class="card-body">
+                <p>
+                  По поводу разработки программного обеспечения рекомендую
+                  обратиться в digital-агентство <a href="https://webdriver.agency/">WebDriver</a>.
+                </p>
+                <p>
+                  Также рекомендую
+                  <a  href="https://events4friends.ru/#/services">услуги друзей</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </section>
+
+      <!-- Поддержка -->
+      <section class="pt-4">
+        <h2 id="support" class="h3 text-center mb-4">
+          <a class="link" href="#support">
+            <img class="link__img" src="./img/icons/link-solid.svg" alt="link"/>
+          </a>
+          Поддержка
+        </h2>
+        <div class="row">
+          <div class="col-12">
+            <div class="card mb-3">
+              <div class="card-body">
+                <p>
+                  Этот раздел создан для популяризации регулярных пожертвований. 
+                  «Пожертвовать или не пожертвовать?» - на этот вопрос каждый отвечает себе сам. 
+                </p>
+                <p>
+                  Я поддерживаю такие организации:
+                </p>
+                <ul>
+                  <li>
+                    Благотворительная организация <a href="https://he-he.org/">Health & Help</a> (Уфа).
+                  </li>
+                  <li>
+                    <a href="https://vk.com/velosreda39">Велосреда</a> - выходной среди недели (Калининград).
+                  </li>
+                  <li>
+                    Студия озвучки <a href="https://vk.com/studio_vd">VERT DIDER</a> (Москва).
+                  </li>
+                  <li>
+                    Образовательная площадка <a href="https://trava.education/">Трава</a> (Санкт-Петербург).
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>   
+      </section>      
     </div>
 
     <!-- 
@@ -421,82 +297,8 @@
       <source src="./video/back.webm" type="video/webm">
       <source src="./video/back.ogv" type="video/ogv">
     </video> -->
-
-    <!-- <div class="container mb-5 mt-4">
-      <button id="btn-mute" class="btn btn-outline-info float-right"> <i class="fas fa-volume-off"></i> </button>
-    </div> -->
   </div>
   
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#btn-sites').click(function() {
-        $('.filter-bots').hide();
-        $('.filter-apps').hide();
-        $('.filter-other').hide();
-        $('.filter-sites').show();
-        $('#dropdown-filter').html('Сайты');
-        $([document.documentElement, document.body]).animate({
-          scrollTop: $("#portfolio").offset().top
-        }, 500);
-      });
-      $('#btn-bots').click(function() {
-        $('.filter-sites').hide();
-        $('.filter-apps').hide();
-        $('.filter-other').hide();
-        $('.filter-bots').show();
-        $('#dropdown-filter').html('Боты');
-        $([document.documentElement, document.body]).animate({
-          scrollTop: $("#portfolio").offset().top
-        }, 500);
-      });
-      $('#btn-apps').click(function() {
-        $('.filter-sites').hide();
-        $('.filter-bots').hide();
-        $('.filter-other').hide();
-        $('.filter-apps').show();
-        $('#dropdown-filter').html('Приложения');
-        $([document.documentElement, document.body]).animate({
-          scrollTop: $("#portfolio").offset().top
-        }, 500);
-      });
-      $('#btn-other').click(function() {
-        $('.filter-sites').hide();
-        $('.filter-bots').hide();
-        $('.filter-apps').hide();
-        $('.filter-other').show();
-        $('#dropdown-filter').html('Другое');
-        $([document.documentElement, document.body]).animate({
-          scrollTop: $("#portfolio").offset().top
-        }, 500);
-      });
-      $('#btn-all').click(function() {
-        $('.filter-other').show();
-        $('.filter-sites').show();
-        $('.filter-bots').show();
-        $('.filter-apps').show();
-        $('#dropdown-filter').html('Все проекты');
-        $([document.documentElement, document.body]).animate({
-          scrollTop: $("#portfolio").offset().top
-        }, 500);
-      });      
-    });
-  </script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      // Mute / unmute video
-      /*$("#btn-mute").click(function() {
-        $("#btn-mute > i").toggleClass("fa-volume-off").toggleClass("fa-volume-up");
-        var muted = $("#back-video").prop('muted');
-        $("#back-video").prop('muted', !muted);
-      });*/
-    });
-  </script>
-
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
       (function (d, w, c) {
