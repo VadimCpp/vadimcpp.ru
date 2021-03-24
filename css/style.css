@@ -38,34 +38,6 @@
   width: 50px;
 }
 
-.gdg-line {
-  display: inline-block;
-  height: 20px;
-  width: 10px;
-  position: relative;
-  top: 3px;
-}
-
-.gdg-green {
-  background-color: #1A8D42;
-}
-
-.gdg-yellow {
-  background-color: #F3BA2D;
-}
-
-.gdg-blue {
-  background-color: #4367B1;
-}
-
-.gdg-red {
-  background-color: #CB2C29;
-}
-
-.image-w {
-  max-width: 100%;
-}
-
 /*********************************/
 /* BODY                          */
 /*********************************/
