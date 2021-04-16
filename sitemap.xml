@@ -3,22 +3,32 @@
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 	<loc>https://vadimcpp.ru/</loc>
-	<lastmod>2021-03-31T12:47:18+01:00</lastmod>
+	<lastmod>2021-04-15T12:00:00+02:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://vadimcpp.ru/frontendbasics/</loc>
-	<lastmod>2021-03-31T12:47:22+01:00</lastmod>
+	<lastmod>2021-04-15T12:00:00+02:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://vadimcpp.ru/gdgcensorbot/</loc>
-	<lastmod>2021-03-31T12:47:23+01:00</lastmod>
+	<lastmod>2021-04-15T12:00:00+02:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://vadimcpp.ru/gdgcensorbot/voting-results.html</loc>
+	<lastmod>2021-04-15T12:00:00+02:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://vadimcpp.ru/gdgcensorbot/privacy-policy.html</loc>
+	<lastmod>2021-04-15T12:00:00+02:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://vadimcpp.ru/events4friends/</loc>
-	<lastmod>2021-03-31T12:47:24+01:00</lastmod>
+	<lastmod>2021-04-15T12:00:00+02:00</lastmod>
 	<priority>0.8</priority>
 </url>
 </urlset>
