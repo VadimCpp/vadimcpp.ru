@@ -323,3 +323,21 @@ footer {
   height: 16px;
 }
 
+.page_faq {
+  margin-top: 8px;
+}
+
+.faq_header {
+  text-align: center;
+  margin-bottom: 16px;
+
+  font-size: 1.5rem;
+}
+
+.faq_question {
+  margin-bottom: 16px;
+}
+
+.faq_answer {
+  margin-bottom: 16px;
+}
