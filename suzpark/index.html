@@ -68,10 +68,16 @@
         Нажми зеленую кнопку
       </p>
       <p class="text-center">
-         <button class="btn btn-success">Скопировать</button>
+        <button
+          id="copy-btn"
+          class="btn btn-success"
+          data-clipboard-target="#support-aaa"
+        >
+          Скопировать
+        </button>
       </p>
       <p>
-        <textarea id="result-area" rows="6" class="form-control w-100 text-secondary" disabled>
+        <textarea id="support-aaa" rows="6" class="form-control w-100 text-secondary" disabled>
         Поддерживаю заявление губернатора Алиханова Антона Андреевича по поводу сохранения всего «Суздальского парка» в
 качестве зеленой зоны. Прошу перевести всю территорию «Суздальского парка» в г. Калининград (земельных участков
 (39:15:132801:228, 39:15:132801:230, 39:15:132801:375, 39:15:132801:45, 39:15:132801:46, 39:15:132801:1253), а также
@@ -132,11 +138,11 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+
   <script type="text/javascript">
     $(document).ready(function() {
-      $("#btn-copy").click(function() {
-        // TODO: скопировать текст  
-      });    
+      new ClipboardJS('#copy-btn'); 
     });
   </script>
 
