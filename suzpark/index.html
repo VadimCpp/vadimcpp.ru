@@ -142,7 +142,7 @@
 
   <script type="text/javascript">
     $(document).ready(function() {
-      new ClipboardJS('#copy-btn'); 
+      const clipboard = new ClipboardJS('#copy-btn'); 
 
       clipboard.on('success', function(e) {
         console.info('Action:', e.action);
