@@ -249,6 +249,10 @@ footer {
   word-break: break-word;
 }
 
+.all-break {
+  word-break: break-all;
+}
+
 .text-shadow-white {
   text-shadow: 0px 0px 10px  white;
   color: black;
