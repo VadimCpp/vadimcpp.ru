@@ -64,10 +64,10 @@
       <!-- Шаг 1 -->
       <p class="h1 text-center mt-5"> 1️⃣ </p>
       <h2 class="text-center"> Скопируй текст </h2>
-      <p class="text-center">
+      <p id="copy-hint" class="text-center">
         Нажми зеленую кнопку
       </p>
-      <p class="text-center">
+      <p id="copy-paragraph" class="text-center">
         <button
           id="copy-btn"
           class="btn btn-success"
@@ -76,7 +76,7 @@
           Скопировать
         </button>
       </p>
-      <p>
+      <p id="copy-text-paragraph">
         <textarea id="support-aaa" rows="6" class="form-control w-100 text-secondary" readonly>
         Поддерживаю заявление губернатора Алиханова Антона Андреевича по поводу сохранения всего «Суздальского парка» в
 качестве зеленой зоны. Прошу перевести всю территорию «Суздальского парка» в г. Калининград (земельных участков
@@ -143,6 +143,23 @@
   <script type="text/javascript">
     $(document).ready(function() {
       new ClipboardJS('#copy-btn'); 
+
+      clipboard.on('success', function(e) {
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+
+        e.clearSelection();
+        $("#copy-paragraph").hide();
+        $("#copy-text-paragraph").hide();
+        $("#copy-hint").text("Текст скопирован! Переходи к следующему пункту.");
+      });
+
+      clipboard.on('error', function(e) {
+        alert("Что-то пошло не так! Скопируйте текст путем выделения");
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+      });
     });
   </script>
 
